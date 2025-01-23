@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1 class="heading">Temperature Converter</h1>
+    <p class="headline">Convert Temperature into Celsius(°C),Fahrenheit(°F),Kelvin (K) & Rankine (°R)</p>
+    <div class="container">
+        <div class="temprature_container">
+          <label>Enter Temperature</label>
+          <input type="number" class="numberbox" id="numberbox" value="0">  
+        </div>
+      <form class="form_container" >
+      <div class="columns">
+          <label for="from" >From : </label>
+        <span>
+          <select  name="cars" id="temperature1">
+            <option value="Celsius" >Celsius(°C)</option>
+            <option value="Fahrenheit">Fahrenheit(°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+          </select>
+        </span>
+      </div>
+      <div class="columns">
+          <label for="to" >To : </label>
+        <span>  
+          <select name="cars" id="temperature2">
+            <option value="Celsius" >Celsius(°C)</option>
+            <option value="Fahrenheit" >Fahrenheit(°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+          </select>
+        </span>  
+      </div>
+      <div class="submit">
+        <button class="submit1" type="button" onclick="convert()"> Convert</button>
+      </div> 
+      <br><br>
+      
+        <p class="result" id="result" >Result</p>
+      
+    </form>
+    <div class="calculation">
+      <h3 class="heading2">CALCULATION</h1>
+      <p class="explain" id="calculation"></p>
+    </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
