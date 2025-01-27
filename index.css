@@ -8,19 +8,20 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: block;
 }
 .heading{
     color:rgb(254, 254, 255);
     text-shadow: 3px 2px 2px #a5adc2;
-    text-align: center;
-    padding-top: 3.5rem;
+  /*  text-align: center;
+    padding-top: 3.5rem; */
     font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .headline{
-   padding-top: 1.5rem;
+  /* padding-top: 1.5rem;
    padding-left: 1.5rem;
-   color:seashell;
+   */color:seashell;
    text-align: center;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-size: 2rem;
@@ -29,8 +30,6 @@ body{
     border-radius: 18px;
     border:none;
     background: aliceblue;
-    margin-left: 35%;
-    margin-right: 35%;
     margin-top: 5%;
     padding-top: 0.25%;
     padding-bottom: 0.25%;
@@ -38,6 +37,7 @@ body{
     font-size: 40px;
     color:rgb(4, 27, 48);
     box-shadow: 0px 0px 15px #fff;
+    justify-content: center;
 }
 .numberbox{
     margin-top: 5%;
@@ -66,33 +66,28 @@ body{
 }
 .columns{
     margin-top: 5%;
+    margin-bottom: 15;
     align-items: center;
     padding-left: 65px;
     padding-top: 10px;
     padding-bottom:10px ;
+
 }
 .columns label{
-    display: inline-block;
-    padding-bottom: 10px;
     font-size : 32px; 
     color:aliceblue;
     font-style:bold ;
 }
 
 .columns select{
-    display: inline-block;
-    margin-top: 5px;
    font-size: 22px;
    border-radius: 9px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   padding-left: 10px;
-   padding-right: 10px;
+
 }
 .submit{
-   margin-top: 15%;
-   margin-bottom: 5%;
-   margin-left: 80%;
+   margin-top: 25%;
+   margin-bottom: 15%;
+   margin-left: 60%;
    justify-content: center;
    align-items: center;  
    cursor: pointer;
@@ -116,11 +111,12 @@ body{
     border-color: seashell;
     margin-top: 5%;
     margin-bottom: 15%;
-    margin-left: 85%;
+    margin-left: 15%;
+    margin-right:15%;
     font-size: 30px;
     font-style: italic;
-    padding-left: 40px;
-    padding-right: 130px;
+    padding-left: 60px;
+    padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 20px; 
     color:rgb(6, 28, 48);
@@ -128,7 +124,8 @@ body{
     box-shadow: 0px 0px 15px #fff;
     border-radius: 15px;
     border:none;
-    overflow: hidden;
+    text-align: center;
+    
 }
 .calculation{
     margin-top: 2%;
@@ -155,3 +152,18 @@ body{
     margin-top: 5%;
     text-align: center;
 }
+@media (min-width: 576px) { 
+    .heading{
+        justify-content: center;
+        width:100%;
+        text-align: center;
+    }
+    .headline{
+        justify-content: center;
+        width:100%;
+    }
+    .temprature_container lebel{
+        font-size: 2rem;
+        text-align: center;
+    }
+ }
